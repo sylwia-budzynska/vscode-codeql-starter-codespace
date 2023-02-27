@@ -5,8 +5,11 @@
     "ms-sarifvscode.sarif-viewer"
   ],
   "postCreateCommand": "gh extensions install github/gh-codeql && gh codeql set-version latest && gh codeql install-stub /home/codespace/.local/bin && git submodule init && git submodule update --recursive",
+  "hostRequirements": {
+		"memory": "16gb"
+  },
   "settings": {
     "codeQL.runningQueries.memory": 4096,
     "codeQL.cli.executablePath": "/home/codespace/.local/bin/codeql"
   }
- }
+}
