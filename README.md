@@ -1,6 +1,6 @@
 # NullCon Berlin - CodeQL Workshop Setup Instructions
 
- **Please follow these instructions to the end** (including the Select CodeQL Database and Test your installation section) before the workshop starts.
+ **Please follow these instructions to the end** (including the [Select CodeQL Database](#select-codeql-database) and [Test your installation](#test-your-installation) sections) before the workshop starts.
 
 You can choose between two options to run the workshop exercises:
 * Option A: GitHub Codespace (CodeQL is run remotely on a Linux based GitHub Codespace)
@@ -73,7 +73,6 @@ Make sure that the previously installed CodeQL database is selected in the CodeQ
 <img src="images/codeql-db-selected.png"  width="442" alt="Screenshot: CodeQL Database selected">
 
 ### Step-by-Step
-
 
 1. In VS Code: go to the workspace folder: `codeql-custom-queries-java`
 2. Create a new file `test.ql`
