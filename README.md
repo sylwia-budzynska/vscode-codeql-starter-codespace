@@ -64,6 +64,17 @@ Use a local CodeQL installation to run the workshop exercises.
 
 ## Test your installation
 
+### Prerequisites
+
+Make sure that the previously installed CodeQL database is selected in the CodeQL view. (Click on "Select" if it's not)
+
+=> When the database is selected it should look like this (note the checkmark):
+
+<img src="images/codeql-db-selected.png"  width="442" alt="Screenshot: CodeQL Database selected">
+
+### Step-by-Step
+
+
 1. In VS Code: go to the workspace folder: `codeql-custom-queries-java`
 2. Create a new file `test.ql`
 3. add the following content: `select "Hello World!"`
