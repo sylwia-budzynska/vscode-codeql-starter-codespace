@@ -27,7 +27,7 @@ Note: The first 120h hours per core of Codespace usage are free per month, we us
 
 <img src="images/create-codespace.png"  width="439" alt="Screenshot: Create Codespace, click on plus">
 
-=> VS Code will start and a remote Codespace will be built (this may take some time).
+=> VS Code will start in your browser and a remote Codespace will be built (this may take some time).
 If you are asked to open the workspace `vscode-codeql-starter.code-workspace` click on "Open Workspace".
 
 ## Option B: Local installation
