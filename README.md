@@ -3,8 +3,8 @@
  **Please follow these instructions to the end** (including the [Select CodeQL Database](#select-codeql-database) and [Test your installation](#test-your-installation) sections) before the workshop starts.
 
 You can choose between two options to run the workshop exercises:
-* Option A: GitHub Codespace (using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace)
-* Option B: Local installation (using VS Code - CodeQL is run locally on your machine)
+* [Option A: GitHub Codespace](#option-a-github-codespace) (using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace)
+* [Option B: Local installation](#option-b-local-installation) (using VS Code - CodeQL is run locally on your machine)
 
 ## Option A: GitHub Codespace
 
