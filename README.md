@@ -1,41 +1,74 @@
-# vscode-codeql-starter
+# NullCon Berlin - CodeQL Workshop Setup Instructions
 
-A starter workspace to use with the [CodeQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=github.vscode-codeql). For more information, see the [`vscode-codeql` repo](https://github.com/github/vscode-codeql/).
+ **Please follow these instructions to the end** (including the Select CodeQL Database and Test your installation section) before the workshop starts.
 
-## Instructions
+You can choose between two options to run the workshop exercises:
+* Option A: GitHub Codespace (CodeQL is run remotely on a Linux based GitHub Codespace)
+* Option B: Local installation
 
-1. Install [Visual Studio Code](https://code.visualstudio.com).
-1. Install the [CodeQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=github.vscode-codeql).
-1. Clone this repository to your computer.
-    - Make sure to include the submodules, either by `git clone --recursive` or by `git submodule update --init --remote` after clone.
-    - Use `git submodule update --remote` regularly to keep the submodules up to date.
-1. In VS Code, click File > Open Workspace. Select the file `vscode-codeql-starter.code-workspace` in your checkout of this repository.
-1. You will see several folders open in the left sidebar:
-    - The `ql` folder contains the [open-source CodeQL standard libraries](https://github.com/github/codeql/tree/codeql-cli/latest) for C/C++, C#, Go, Java, JavaScript/Typescript, Python, and Ruby. It tracks the branch tagged `codeql-cli/latest` in https://github.com/github/codeql. You can run the standard queries from here, and browse the libraries.
-    - The folders named `codeql-custom-queries-<language>` are ready for you to start developing your own custom queries for each language, while using the standard libraries. There are some example queries to get you started.
-1. Follow the [documentation for the CodeQL extension](https://codeql.github.com/docs/codeql-for-visual-studio-code/) to learn how to set up the extension, add a database and run queries against it. Have fun!
+## Option A: GitHub Codespace
 
-## Using the `vscode-codeql-starter` in a private repository
+Use remote GitHub Codespaces to run the workshop exercises.
 
-If you want to privately share your CodeQL queries with your teammates using this project as a template:
+### Prerequisites
 
-1. Create an empty, private project in the organization you want.
-1. Clone this project locally: `git clone git@github.com:github/vscode-codeql-starter.git`
-1. Add a remote to the local copy `git remote add my-org git@github.com:<MY-ORG>/vscode-codeql-starter.git`
-1. Push the code to the new remote: `git push my-org main`
+* A stable internet connection throughout the workshop.
+* A GitHub account
+* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) installed on your local machine.
+* The [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension for VS Code.
 
-GitHub does not allow private forks of public repositories.
+Note: The first 120h hours per core of Codespace usage are free per month, we use a codespace with 4 cores for this workshop since 4 cores is the current maximum for free accounts. (If you have a Pro account we recommend to switch to an 8 core machine.)
 
-## Contributing
+### Step-by-Step
 
-This project welcomes contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+1. Login to your [GitHub](https://github.com/login) account
+2. Go to the repo https://github.com/p-/nullcon-berlin-2023-workshop / (short link: https://gh.io/nc-2023-ws)
+3. Click on Code -> CodeSpaces
+4. Click on the plus sign (+) to create a new codespace.
 
-## Reporting issues
+<img src="images/create-codespace.png"  width="439" alt="Screenshot: Create Codespace, click on plus">
 
-Issues and suggestions should be reported in the [`vscode-codeql` repo](https://github.com/github/vscode-codeql/issues/new/choose).
+=> VS Code will start and a remote Codespace will be built (this may take some time).
 
-## License
+## Option B: Local installation
 
-This project is [licensed](LICENSE.md) under the MIT License. 
+Use a local CodeQL installation to run the workshop exercises.
 
-The CodeQL extension for Visual Studio Code is [licensed](https://github.com/github/vscode-codeql/blob/main/extensions/ql-vscode/LICENSE.md) under the MIT License. The version of CodeQL used by the CodeQL extension is subject to the [GitHub CodeQL Terms & Conditions](https://securitylab.github.com/tools/codeql/license).
+### Prerequisites
+
+* Requires to download up to 1 GB of data.
+* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) and `git` installed on your local machine.
+
+### Step-by-Step
+
+1. Install [VS Code extension for CodeQL](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql)
+2. In the terminal, in a directory specified by you: `$ git clone https://github.com/p-/nullcon-berlin-2023-workshop.git`
+3. `$ cd nullcon-berlin-2023-workshop`
+4. `$ git submodule init`
+5. `$ git submodule update --recursive`
+6. In VS Code: File -> **Open Workspace** `vscode-codeql-starter.code-workspace`
+
+=> VS Code will start and the CodeQL CLI (binaries) will be installed. (approx. 500 MB of addtional data need to be downloaded))
+
+<img src="images/codeql-cli-dl.png"  width="399" alt="Screenshot: CodeQL for VS Code downloads CodeQL binaries">
+
+## Select CodeQL Database
+
+1. Make sure you have the workspace `vscode-codeql-starter.code-workspace` open in VS Code.
+2. Go To the CodeQL View
+3. Click on "Choose Database from Archive" and select the `vulnerable-jxpath-project-codeql-db-with-cache.zip` file in the root of the repository.
+
+<img src="images/select-codeql-db.png"  width="380" alt="Screenshot: Select CodeQL DB from archive">
+
+<img src="images/codeql-db-from-path.png"  width="620" alt="Screenshot: Select CodeQL DB from path">
+
+## Test your installation
+
+1. In VS Code: go to the workspace folder: `codeql-custom-queries-java`
+2. Create a new file `test.ql`
+3. add the following content: `select "Hello World!"`
+4. Save file and right click in file on "CodeQL: Run Query on Selected Database"
+
+=>  The output should look like this:
+
+<img src="images/test-hello-world.png"  width="620" alt="Screenshot: First CodeQL query results">
