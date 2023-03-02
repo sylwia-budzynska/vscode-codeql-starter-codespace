@@ -66,7 +66,7 @@ Use a local CodeQL installation to run the workshop exercises.
 
 ### Prerequisites
 
-Make sure that the previously installed CodeQL database is selected in the CodeQL view. (Click on "Select" if it's not)
+Make sure that the previously chosen CodeQL database is selected in the CodeQL view. (Click on "Select" if it's not)
 
 => When the database is selected it should look like this (note the checkmark):
 
