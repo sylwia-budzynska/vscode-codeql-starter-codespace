@@ -1,10 +1,10 @@
-# NullCon Berlin - CodeQL Workshop Setup Instructions
+# Nullcon Berlin - CodeQL Workshop Setup Instructions
 
  **Please follow these instructions to the end** (including the [Select CodeQL Database](#select-codeql-database) and [Test your installation](#test-your-installation) sections) before the workshop starts.
 
 You can choose between two options to run the workshop exercises:
-* Option A: GitHub Codespace (CodeQL is run remotely on a Linux based GitHub Codespace)
-* Option B: Local installation
+* Option A: GitHub Codespace (using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace)
+* Option B: Local installation (using VS Code - CodeQL is run locally on your machine)
 
 ## Option A: GitHub Codespace
 
@@ -14,8 +14,7 @@ Use remote GitHub Codespaces to run the workshop exercises.
 
 * A stable internet connection throughout the workshop.
 * A GitHub account
-* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) installed on your local machine.
-* The [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension for VS Code.
+* A recent browser or [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) with the [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension installed on your local machine.
 
 Note: The first 120h hours per core of Codespace usage are free per month, we use a codespace with 4 cores for this workshop since 4 cores is the current maximum for free accounts. (If you have a Pro account we recommend to switch to an 8 core machine.)
 
@@ -29,6 +28,7 @@ Note: The first 120h hours per core of Codespace usage are free per month, we us
 <img src="images/create-codespace.png"  width="439" alt="Screenshot: Create Codespace, click on plus">
 
 => VS Code will start and a remote Codespace will be built (this may take some time).
+If you are asked to open the workspace `vscode-codeql-starter.code-workspace` click on "Open Workspace".
 
 ## Option B: Local installation
 
