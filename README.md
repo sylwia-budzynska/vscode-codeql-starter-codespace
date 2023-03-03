@@ -68,6 +68,8 @@ Use a local CodeQL installation to run the workshop exercises.
 
 <img src="images/codeql-db-from-path.png"  width="620" alt="Screenshot: Select CodeQL DB from path">
 
+Now you can test your installation:
+
 ## Test your installation
 
 ### Prerequisites
