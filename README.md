@@ -30,6 +30,9 @@ Note: The first 120h hours per core of Codespace usage are free per month, we us
 => VS Code will start in your browser and a remote Codespace will be built (this may take some time).
 If you are asked to open the workspace `vscode-codeql-starter.code-workspace` click on "Open Workspace".
 
+5. Continue with [Selecting a CodeQL Database](#select-codeql-database)
+6. Then [Test your installation](#test-your-installation)
+
 ## Option B: Local installation
 
 Use a local CodeQL installation to run the workshop exercises.
@@ -51,6 +54,9 @@ Use a local CodeQL installation to run the workshop exercises.
 => VS Code will start and the CodeQL CLI (binaries) will be installed. (approx. 500 MB of addtional data need to be downloaded))
 
 <img src="images/codeql-cli-dl.png"  width="399" alt="Screenshot: CodeQL for VS Code downloads CodeQL binaries">
+
+7. Continue with [Selecting a CodeQL Database](#select-codeql-database)
+8. Then [Test your installation](#test-your-installation)
 
 ## Select CodeQL Database
 
