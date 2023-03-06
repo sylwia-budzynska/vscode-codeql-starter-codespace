@@ -49,7 +49,7 @@ Use a local CodeQL installation to run the workshop exercises.
 3. `$ cd nullcon-berlin-2023-workshop`
 4. `$ git submodule init`
 5. `$ git submodule update --recursive`
-6. In VS Code: File -> **Open Workspace** `vscode-codeql-starter.code-workspace`
+6. In VS Code: File -> **Open Workspace from File...** `vscode-codeql-starter.code-workspace`
 
 => VS Code will start and the CodeQL CLI (binaries) will be installed. (approx. 500 MB of addtional data need to be downloaded))
 
