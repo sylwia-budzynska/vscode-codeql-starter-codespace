@@ -58,6 +58,15 @@ Use a local CodeQL installation to work on the workshop exercises.
 7. Continue with [Selecting a CodeQL Database](#select-codeql-database)
 8. Then [Test your installation](#test-your-installation)
 
+### Troubleshooting the local installation
+
+In case you see errors such as:
+* `Failed to run query: Could not resolve library path for [..]`
+* `Could not resolve module [..]` 
+* `Could not resolve type [..]`
+
+=> It is very likely that you missed cloning the git submodules (namely the ql repo). To fix this follow the [Step-by-Step](#step-by-step-1) instructions starting with step 3.
+
 ## Select CodeQL Database
 
 1. Make sure you have the workspace `vscode-codeql-starter.code-workspace` open in VS Code.
