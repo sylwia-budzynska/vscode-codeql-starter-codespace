@@ -35,7 +35,7 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 
 ### Use existing Codespace
 
-You can simply start the Codespace you prepared for the workshop by going to the [codespace repo](https://github.com/p-/nullcon-berlin-2023-workshop) and clicking on "Code -> Codespaces" and then click on the randomly generated name of this codespace:
+If you've already prepared a Codespace this workshop you can simply start it by going to the [codespace repo](https://github.com/p-/nullcon-berlin-2023-workshop) and clicking on "Code -> Codespaces" and then click on the randomly generated name of this codespace (this will be faster than creating a new one):
 
 <img src="images/use-existing-codespace.png"  width="421" alt="Screenshot: Use existing Codespace">
 
