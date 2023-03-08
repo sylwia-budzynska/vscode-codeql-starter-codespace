@@ -33,6 +33,12 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 5. Continue with [Selecting a CodeQL Database](#select-codeql-database)
 6. Then [Test your installation](#test-your-installation)
 
+### Use existing Codespace
+
+You can simply start the Codespace you prepared for the workshop by going to the [codespace repo](https://github.com/p-/nullcon-berlin-2023-workshop) and clicking on "Code -> Codespaces" and then click on the randomly generated name of this codespace:
+
+<img src="images/use-existing-codespace.png"  width="421" alt="Screenshot: Use existing Codespace">
+
 ## Option B: Local installation
 
 Use a local CodeQL installation to work on the workshop exercises.
