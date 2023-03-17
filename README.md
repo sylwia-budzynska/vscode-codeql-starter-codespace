@@ -1,5 +1,9 @@
 # Nullcon Berlin - CodeQL Workshop Setup Instructions
 
+**Update:** The workshop presentation slides are now ready for download: [nullcon-23-codeql-workshop.pdf](https://github.com/p-/nullcon-berlin-2023-workshop/blob/main/nullcon-23-codeql-workshop.pdf)
+
+----
+
  **Please follow these instructions to the end** (including the [Select CodeQL Database](#select-codeql-database) and [Test your installation](#test-your-installation) sections) before the workshop starts.
 
 You can choose between two options to run the workshop exercises:
