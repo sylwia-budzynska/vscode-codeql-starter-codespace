@@ -7,7 +7,7 @@ Peter Stöckli (@p-) and adapted to the exercises in the CodeQL zero to hero ser
 
 You can choose between several options to do the exercises:
 * Option A: Recommended: GitHub Codespace (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
-* Option B: Local installation using VS Code
+* Option B: Local installation
 * CodeQL CLI
 * CodeQL in [neovim](https://github.com/pwntester/codeql.nvim)
 * CodeQL in [emacs](https://github.com/anticomputer/emacs-codeql) 
@@ -16,7 +16,6 @@ You can choose between two options to run the workshop exercises:
 * [Option A: GitHub Codespace](#option-a-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
 * [Option B: Local installation](#option-b-local-installation) (Using VS Code - CodeQL is run locally on your machine)
 
-## Option A: GitHub Codespace
 ## GitHub Codespace
 
 Use a remote GitHub Codespace to work on the exercises.
