@@ -44,7 +44,7 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 
 ## Option B: Local installation
 
-Use a local CodeQL installation to work on the workshop exercises.
+Use a local CodeQL installation to work on the exercises.
 
 ### Prerequisites
 
