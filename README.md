@@ -6,15 +6,20 @@ Peter Stöckli (@p-) and adapted to the exercises in the CodeQL zero to hero ser
  **Please follow these instructions to the end** (including the [Select CodeQL Database](#select-codeql-database) and [Test your installation](#test-your-installation) sections).
 
 You can choose between several options to do the exercises:
-* [Recommended: GitHub Codespace](#github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
-* Local installation 
+* Option A: Recommended: GitHub Codespace (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
+* Option B: Local installation using VS Code
 * CodeQL CLI
-* CodeQL in neovim
-* CodeQL in emacs 
+* CodeQL in [neovim](https://github.com/pwntester/codeql.nvim)
+* CodeQL in [emacs](https://github.com/anticomputer/emacs-codeql) 
 
+You can choose between two options to run the workshop exercises:
+* [Option A: GitHub Codespace](#option-a-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
+* [Option B: Local installation](#option-b-local-installation) (Using VS Code - CodeQL is run locally on your machine)
+
+## Option A: GitHub Codespace
 ## GitHub Codespace
 
-Use a remote GitHub Codespace to work on the workshop exercises.
+Use a remote GitHub Codespace to work on the exercises.
 
 ### Prerequisites
 
@@ -38,21 +43,49 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 5. Continue with [Selecting a CodeQL Database](#select-codeql-database)
 6. Then [Test your installation](#test-your-installation)
 
-### Use existing Codespace
+## Option B: Local installation
 
-If you've already prepared a Codespace this workshop you can simply start it by going to the [codespace repo](https://github.com/sylwia-budzynska/vscode-codeql-starter-codespace) and clicking on "Code -> Codespaces" and then click on the randomly generated name of this codespace (this will be faster than creating a new one):
+Use a local CodeQL installation to work on the workshop exercises.
 
-<img src="images/use-existing-codespace.png"  width="421" alt="Screenshot: Use existing Codespace">
+### Prerequisites
+
+* Requires downloading up to 2 GB of data in total.
+* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) and `git` installed on your local machine.
+
+### Step-by-Step
+
+1. Install [VS Code extension for CodeQL](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql)
+2. In the terminal, in a directory specified by you: `$ git clone https://github.com/p-/nullcon-berlin-2023-workshop.git`
+3. `$ cd nullcon-berlin-2023-workshop`
+4. `$ git submodule init`
+5. `$ git submodule update --recursive`
+6. In VS Code: File -> **Open Workspace from File...** `vscode-codeql-starter.code-workspace`
+
+=> VS Code will start and the CodeQL CLI (binaries) will be installed. (approx. 500 MB of additional data need to be downloaded))
+
+<img src="images/codeql-cli-dl.png"  width="399" alt="Screenshot: CodeQL for VS Code downloads CodeQL binaries">
+
+7. Continue with [Selecting a CodeQL Database](#select-codeql-database)
+8. Then [Test your installation](#test-your-installation)
+
+### Troubleshooting the local installation
+
+In case you see errors such as:
+* `Failed to run query: Could not resolve library path for [..]`
+* `Could not resolve module [..]` 
+* `Could not resolve type [..]`
+
+=> It is very likely that you missed cloning the git submodules (namely the ql repo). To fix this follow the [Step-by-Step](#step-by-step-1) instructions starting with step 3.
 
 ## Select CodeQL Database
 
 1. Make sure you have the workspace `vscode-codeql-starter.code-workspace` open in VS Code.
 2. Go To the CodeQL View
-3. Click on "Choose Database from Archive" and select the `vulnerable-jxpath-project-codeql-db-with-cache.zip` file in the root of the repository.
+3. Click on choose the “Download database from GitHub” option, the one with the GitHub logo (Fun fact! Did you know that the character in the logo is called Monalisa? Now you know!). This option allows you to specify any public repo on GitHub to download as a CodeQL database - as long as it uses one of the supported languages by CodeQL. 
 
-<img src="images/select-codeql-db.png"  width="380" alt="Screenshot: Select CodeQL DB from archive">
+<img src="images/download-from-github.png"  width="380" alt="Screenshot: Select CodeQL DB from GitHub icon">
 
-<img src="images/codeql-db-from-path.png"  width="620" alt="Screenshot: Select CodeQL DB from path">
+<img src="images/specify-github-repo.png"  width="620" alt="Screenshot: Enter a GitHub repository URL">
 
 Now you can test your installation:
 
@@ -62,13 +95,9 @@ Now you can test your installation:
 
 Make sure that the previously chosen CodeQL database is selected in the CodeQL view. (Click on "Select" if it's not)
 
-=> When the database is selected it should look like this (note the checkmark):
-
-<img src="images/codeql-db-selected.png"  width="442" alt="Screenshot: CodeQL Database selected">
-
 ### Step-by-Step
 
-1. In VS Code: go to the workspace folder: `codeql-custom-queries-java`
+1. In VS Code: go to the workspace folder: `codeql-custom-queries-python`
 2. Create a new file `test.ql`
 3. add the following content: `select "Hello World!"`
 4. Save file and right click in file on "CodeQL: Run Query on Selected Database"
